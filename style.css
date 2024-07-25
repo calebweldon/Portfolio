@@ -8,8 +8,6 @@
     /*========== Colors ==========*/
     --off-white-color: rgb(248, 248, 245);
     --charcoal-color: #1a1818;
-    --green-color: rgb(23, 71, 39);
-    --purple-color: rgb(100, 36, 179);
     --blue-color: #669DBA;
     --lightblue-color: #B8D0DD;
     --gradient: linear-gradient(to bottom, var(--lightblue-color) 50%, var(--blue-color));
@@ -19,9 +17,6 @@
     /*.5rem = 8px | 1rem = 16px ...*/
     --body-font: "Poppins", sans-serif;
     --h1-font-size: 1.5rem;
-    --h2-font-size: 1.5rem;
-    --p-font-size: 1.5rem;
-    --i-font-size: 2rem;
     --normal-font-size: .938rem;
   
     /*========== Font weight ==========*/
@@ -34,14 +29,14 @@
     --z-fixed: 100;
 }
 
-  /*=============== RESPONSIVE TYPOGRAPHY ===============*/
+/*=============== RESPONSIVE TYPOGRAPHY ===============*/
 @media screen and (min-width: 1150px) {
     :root {
       --normal-font-size: 1rem;
     }
   }
 
-  /*=============== BASE ===============*/
+/*=============== BASE ===============*/
 * {
     box-sizing: border-box;
     padding: 0;
@@ -100,7 +95,7 @@ a {
     width: 50px;
 }
 
-.nav__close, 
+.nav-close, 
 .nav-toggle {
     display: none;
 }
@@ -167,7 +162,7 @@ a {
     column-gap: 1.5rem;
 }
 
-.nav__close {
+.nav-close {
     position: absolute;
     top: 1rem;
     right: 1.5rem;
@@ -179,19 +174,16 @@ a {
     transition: transform .4s;
 }
 
-.nav-social-link:hover {
-    transform: translateY(-.25rem);
-}
-
 .nav-social-side {
     display: none;
 }
 
+/*=============== Nav links non-mobile ===============*/
 @media screen and (min-width: 851px) {
     .nav-hidden .nav-item {
         opacity: 0;
         transform: translateY(-30%);
-        transition: all 1s;
+        transition: opacity 1s, transform 1s;
     }
 
     .show-animate .nav-item {
@@ -202,7 +194,7 @@ a {
     .nav-hidden .nav-logo {
         opacity: 0;
         transform: translateX(-100%);
-        transition: all 1s;
+        transition: opacity 1s, transform 1s;
     }
 
     .show-animate .nav-logo {
@@ -213,12 +205,17 @@ a {
     .nav-hidden .nav-social-link {
         opacity: 0;
         transform: translateX(100%);
-        transition: all 1s;
+        transition: opacity 1s, transform 1s;
     }
 
     .show-animate .nav-social-link {
         opacity: 1;
         transform: translateX(0);
+    }
+
+    .nav-social-link:hover {
+        transition: transform 0.5s;
+        transform: translateY(-.25rem);
     }
 }
 
@@ -305,7 +302,7 @@ a {
         cursor: pointer;
     }
 
-    .nav__close {
+    .nav-close {
         display: flex;
         color: var(--off-white-color);
         font-size: 1.5rem;
@@ -435,6 +432,8 @@ a {
     }
   }
 
+/*=============== TypeWriter medium ===============*/
+
   @media (max-width: 950px) and (min-width: 701px) {
     .typewriter-container{
         display: flex;
@@ -473,6 +472,8 @@ a {
         line-height: 75px;
       }
   }
+
+  /*=============== TypeWriter mobile ===============*/
 
   @media (max-width: 700px) {
     .typewriter-container{
@@ -611,9 +612,6 @@ a {
         padding: 0px 20px 0px 20px;
         text-align: center;
     } 
-    /* .about-title {
-        font-size: clamp(30px, 4vw, 40px);
-    } */
 }
 
 /*=============== Skills ===============*/
@@ -622,6 +620,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 30px;
 }
 
 .skills-title {
