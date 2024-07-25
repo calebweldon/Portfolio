@@ -10,81 +10,79 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
 
 </head>
 <body>
-          <!--==================== HEADER ====================-->
-        <header class="header nav-hidden" id="header">
-        <nav class="nav container">
-            <div class="nav-logo-container">
-                <a href="#">
-                    <img class ="nav-logo" src="assets/caleb-logo.png" alt="">
+    <header class="header nav-hidden" id="header">
+    <nav class="nav container">
+        <div class="nav-logo-container">
+            <a href="#">
+                <img class ="nav-logo" src="assets/caleb-logo.png" alt="">
+            </a>
+        </div>
+
+        <div class="nav-menu" id="nav-menu">
+            <ul class="nav-list">
+                <li class="nav-item">
+                <a href="#about-section" class="nav-link">
+                    <i class="ri-arrow-right-up-line"></i>
+                    <span>About </span>
+                </a>
+                </li>
+
+                <li class="nav-item">
+                <a href="#skills-section" class="nav-link">
+                    <i class="ri-arrow-right-up-line"></i>
+                    <span>Skills</span>
+                </a>
+                </li>
+
+                <li class="nav-item">
+                <a href="#projects-section" class="nav-link">
+                    <i class="ri-arrow-right-up-line"></i>
+                    <span>Projects</span>
+                </a>
+                </li>
+
+                <li class="nav-item">
+                <a href="#contact-section" class="nav-link">
+                    <i class="ri-arrow-right-up-line"></i>
+                    <span>Contact</span>
+                </a>
+                </li>
+            </ul>
+
+            <div class="nav-close" id="nav-close">
+                <i class="ri-close-large-line"></i>
+            </div>
+
+            <div class="nav-social-side">
+                <a href="https://github.com/calebweldon" target="_blank" class="nav-social-link-side">
+                <i class="ri-github-line"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/calebweldon/" target="_blank" class="nav-social-link-side">
+                <i class="ri-linkedin-box-line"></i>
                 </a>
             </div>
 
-            <div class="nav-menu" id="nav-menu">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                    <a href="#about-section" class="nav-link">
-                        <i class="ri-arrow-right-up-line"></i>
-                        <span>About </span>
-                    </a>
-                    </li>
+        </div>
 
-                    <li class="nav-item">
-                    <a href="#skills-section" class="nav-link">
-                        <i class="ri-arrow-right-up-line"></i>
-                        <span>Skills</span>
-                    </a>
-                    </li>
+        <div class="nav-social">
+            <a href="https://github.com/calebweldon" target="_blank" class="nav-social-link">
+                <i class="ri-github-line"></i>
+            </a>
 
-                    <li class="nav-item">
-                    <a href="#projects-section" class="nav-link">
-                        <i class="ri-arrow-right-up-line"></i>
-                        <span>Projects</span>
-                    </a>
-                    </li>
+            <a href="https://www.linkedin.com/in/calebweldon/" target="_blank" class="nav-social-link">
+                <i class="ri-linkedin-box-line"></i>
+            </a>
+        </div>
 
-                    <li class="nav-item">
-                    <a href="#contact-section" class="nav-link">
-                        <i class="ri-arrow-right-up-line"></i>
-                        <span>Contact</span>
-                    </a>
-                    </li>
-                </ul>
-
-                <div class="nav-close" id="nav-close">
-                    <i class="ri-close-large-line"></i>
-                </div>
-
-                <div class="nav-social-side">
-                    <a href="https://github.com/calebweldon" target="_blank" class="nav-social-link-side">
-                    <i class="ri-github-line"></i>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/calebweldon/" target="_blank" class="nav-social-link-side">
-                    <i class="ri-linkedin-box-line"></i>
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="nav-social">
-                <a href="https://github.com/calebweldon" target="_blank" class="nav-social-link">
-                    <i class="ri-github-line"></i>
-                </a>
-
-                <a href="https://www.linkedin.com/in/calebweldon/" target="_blank" class="nav-social-link">
-                    <i class="ri-linkedin-box-line"></i>
-                </a>
-            </div>
-
-            <div class="nav-toggle" id="nav-toggle">
-                <i class="ri-menu-line"></i>
-            </div>
-        </nav>
-        </header>
+        <div class="nav-toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+        </div>
+    </nav>
+    </header>
 
     <main>
 
@@ -96,10 +94,10 @@
                 <div class="typewriter-container">
                     <p class="static-text">></p>
                     <ul class="typewriter-text">
-                    <li><span>CS Student</span></li>
-                    <li><span>Designer</span></li>
                     <li><span>Developer</span></li>
-                    <li><span>Freelancer</span></li>
+                    <li><span>CS Student</span></li>
+                    <li><span>Engineer</span></li>
+                    <li><span>Designer</span></li>
                     </ul>
                 </div>
             </div>
@@ -127,7 +125,9 @@
                         <h3>Software Engineer Intern</h3>
                         <small>June 2024 - Present</small>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nobis voluptatem similique dolor iusto natus unde dolores? Natus, incidunt consectetur.</p>
+                    <div class="role-text">
+                        <p><span>></span> Fill in later</p>
+                    </div>
                     <span class="left-container-arrow"></span>
                 </div>
             </div>
@@ -139,7 +139,11 @@
                         <h3>Founding Frontend Developer</h3>
                         <small>December 2023 - Present</small>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nobis voluptatem similique dolor iusto natus unde dolores? Natus, incidunt consectetur.</p>
+                    <div class="role-text">
+                        <p><span>></span> Implemented a comprehensive and responsive app interface using Swift, ensuring a seamless and intuitive user experience</p>
+                        <p><span>></span> Enhanced the usability and performance of existing features, incorporating user feedback for continuous improvement</p>
+                        <p><span>></span> Employed Git for effective version control within a Scrum framework, utilizing branching strategies, conducting regular code reviews, and maintaining a clear commit history to enhance traceability and collaboration among team members</p>
+                    </div>
                     <span class="right-container-arrow"></span>
                 </div>
             </div>
@@ -151,7 +155,12 @@
                         <h3>Bioinformatics Research Lab Intern</h3>
                     </div>
                     <small>July 2023 - September 2023</small>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nobis voluptatem similique dolor iusto natus unde dolores? Natus, incidunt consectetur.</p>
+                    <div class="role-text">
+                        <p><span>></span> Optimized PHet, a statistical feature selection algorithm, improving its efficacy in selecting the smallest feature set that preserves heterogeneity and allows for novel disease subtyping while maintaining discrimination of known disease states</p>
+                        <p><span>></span> Performed in-depth comparative analysis and manipulation of dozens of microarray datasets using R, NumPy, and Pandas to identify potentially significant genes used to explain clustering of patient samples and improve PHet's framework
+                        <p><span>></span> Integrated PHet source code with SHAP (Python package) to provide a numerical explanation of the algorithm's output</p>
+                        <p><span>></span> Coordinated with fellow researchers to prepare public documentation and enhance the manuscript before journal submission</p>
+                    </div>
                     <span class="left-container-arrow"></span>
                 </div>
             </div>
@@ -162,23 +171,47 @@
                 <div class="skills-title">
                     <h1>Skills():</h1>
                 </div>
+
+                <div class="skills-logos">
+                    <img src="assets/html-logo.png" alt="">
+                    <img src="assets/css-logo.png" alt="">
+                    <img src="assets/js-logo.png" alt="">
+                    <img src="assets/python-logo.png" alt="">
+                    <img src="assets/c-logo.png" alt="">
+                    <img src="assets/sql-logo.png" alt="">
+                    <img src="assets/swift-logo.png" alt="">
+                    <img src="assets/tableau-logo.png" alt="">
+                </div>
+
                 <div class="box-container">
                     <div class="skills-box">
-                        <i class="ri-terminal-window-line"></i>
-                        <h2>Software Engineering</h2>
-                        <p>textttttttttt</p>
+                        <div class="skills-header">
+                            <i class="ri-terminal-window-line"></i>
+                            <h2>Software Engineering</h2>
+                        </div>
+                        <div class="skills-text">
+                            <p>Experienced in object-oriented and functional programming with Python, C, C++, and MATLAB. Proficient in using Git for version control.</p>
+                        </div>
                     </div>
         
                     <div class="skills-box">
-                        <i class="ri-macbook-line"></i>
-                        <h2>Frontend</h2>
-                        <p>textttttttttt</p>
+                        <div class="skills-header">
+                            <i class="ri-macbook-line"></i>
+                            <h2>Frontend</h2>
+                        </div>
+                        <div class="skills-text">
+                            <p>Extensive knowledge in web and mobile app development with strong knowledge of HTML, CSS, JS, and Swift.</p>
+                        </div>
                     </div>
         
                     <div class="skills-box">
-                        <i class="ri-code-line"></i>
-                        <h2>AI/ML</h2>
-                        <p>textttttttttt</p>
+                        <div class="skills-header">
+                            <i class="ri-code-line"></i>
+                            <h2>Data Science</h2>
+                        </div>
+                        <div class="skills-text">
+                            <p>Skilled in developing and optimizing ML models, with knowledge of data analysis tools such as SQL and Tableau.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -241,8 +274,8 @@
                         <div class="text">
                             <div class="close-button" onclick="togglePopup()">&times;</div>
                             <h1>Budgetly</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident debitis illum reiciendis minima et aliquid error odit minus consectetur sunt?</p>
-                            <a href="" class="button">Go to Example</a>
+                            <p>Say hello to Budgetly, your personal finance partner! Budgetly is an App developed for IOS written using Swift/SwiftUI that makes tracking your expenses seamless and stress-free.</p>
+                            <a href="https://github.com/calebweldon/Budgetly" class="button" target="_blank">Project Repo</a>
                         </div>
                     </div>
                 </div>
@@ -252,12 +285,12 @@
                 <div class="overlay"></div>
                 <div class="overlay-container">
                     <div class="content">
-                        <img src="assets/billed-logo.png" alt="Billed">
+                        <img src="assets/billed-zoomed.png" alt="Billed">
                         <div class="text">
                             <div class="close-button" onclick="togglePopup2()">&times;</div>
-                            <h1>Budgetly</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident debitis illum reiciendis minima et aliquid error odit minus consectetur sunt?</p>
-                            <a href="" class="button">Go to Example</a>
+                            <h1>Billed</h1>
+                            <p>Splitting the Bill, Simplified. Billed is a startup founded at Northwestern University where I serve as a founding frontend developer developing with Swift/SwiftUI.</p>
+                            <a href="https://billed-app.com/" class="button" target="_blank">Launch Website</a>
                         </div>
                     </div>
                 </div>
@@ -270,9 +303,9 @@
                         <img src="assets/2048-logo.png" alt="2048">
                         <div class="text">
                             <div class="close-button" onclick="togglePopup3()">&times;</div>
-                            <h1>Budgetly</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident debitis illum reiciendis minima et aliquid error odit minus consectetur sunt?</p>
-                            <a href="" class="button">Go to Example</a>
+                            <h1>2048 Duel</h1>
+                            <p>2048 Duel is a multiplayer adaptation of the popular game 2048 made using C++. Grab a friend and a computer and start playing!</p>
+                            <a href="https://github.com/calebweldon/2048-Duel" class="button" target="_blank">Project Repo</a>
                         </div>
                     </div>
                 </div>
@@ -285,9 +318,9 @@
                         <img src="assets/nn-logo.png" alt="NN">
                         <div class="text">
                             <div class="close-button" onclick="togglePopup4()">&times;</div>
-                            <h1>Budgetly</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident debitis illum reiciendis minima et aliquid error odit minus consectetur sunt?</p>
-                            <a href="" class="button">Go to Example</a>
+                            <h1>Blackjack NN</h1>
+                            <p>This Python machine learning project utilizes Tensorflow, Keras, and OpenAI Gym to develop a functional AI model that learns a strategy almost 90% similar to the statistically optimal blackjack strategy.</p>
+                            <a href="https://github.com/calebweldon/BlackjackAI/blob/main/README.md" class="button" target="_blank">Project Repo</a>
                         </div>
                     </div>
                 </div>
@@ -305,13 +338,13 @@
                 </div>
                 <div class="footer-links">
                     <span>
-                        <a class="footer-link" href="https://www.linkedin.com/in/calebweldon/">LinkedIn</a>
+                        <a class="footer-link" href="https://www.linkedin.com/in/calebweldon/" target="_blank">LinkedIn</a>
                     </span>
                     <span>
                         <a class="email" href="mailto:caleb.weldon04@gmail.com">caleb.weldon04@gmail.com</a>
                     </span>
                     <span>
-                        <a class="footer-link" href="https://github.com/calebweldon">Github</a>
+                        <a class="footer-link" href="https://github.com/calebweldon" target="_blank">Github</a>
                     </span>
                 </div>
 

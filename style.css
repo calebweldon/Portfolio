@@ -235,12 +235,6 @@ a {
         transition: left .4s;
     }
 
-    .nav-item {
-        transform: translateX(-150px);
-        visibility: hidden;
-        transition: transform .4s ease-out, visibility .4s;
-    }
-
     .nav-list {
         display: flex;
         flex-direction: column;
@@ -334,7 +328,7 @@ a {
     font-size: clamp(60px, 10vw, 100px);
     font-weight: 900;
     text-decoration: none;
-    background: linear-gradient(to bottom, var(--charcoal-color) 50%, var(--lightblue-color) 50%, var(--blue-color));;
+    background: linear-gradient(to bottom, var(--off-white-color) 50%, var(--lightblue-color) 50%, var(--blue-color));;
     background-size: 100% 200%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -521,7 +515,7 @@ a {
     justify-content: center;
     align-items: center;
     gap: 4rem;
-    padding: 100px 30px 0px 30px;
+    padding: 100px 60px 0px 60px;
 }
 
 .about-title {
@@ -614,188 +608,6 @@ a {
     } 
 }
 
-/*=============== Skills ===============*/
-
-.skills-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 30px;
-}
-
-.skills-title {
-    color: var(--charcoal-color);
-    font-size: clamp(30px, 4vw, 40px);
-    padding-bottom: 35px;
-}
-
-.hidden .skills-title {
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
-    transform: scale(0.8);
-}
-
-.show-animate .skills-title {
-    opacity: 1;
-    transform: scale(1);
-}
-
-.hidden .skills-box:nth-child(1) {
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
-    transform: scale(0.8);
-    transition-delay: 0.3s;
-}
-
-.show-animate .skills-box:nth-child(1) {
-    opacity: 1;
-    transform: scale(1);
-}
-
-.hidden .skills-box:nth-child(1)::after {
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-    transition-delay: 0.37s;
-}
-
-.show-animate .skills-box:nth-child(1)::after {
-    opacity: 1;
-}
-
-.hidden .skills-box:nth-child(2) {
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
-    transform: scale(0.8);
-    transition-delay: 0.45s;
-}
-
-.show-animate .skills-box:nth-child(2) {
-    opacity: 1;
-    transform: scale(1);
-}
-
-.hidden .skills-box:nth-child(2)::after {
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-    transition-delay: 0.53s;
-}
-
-.show-animate .skills-box:nth-child(2)::after {
-    opacity: 1;
-}
-
-.hidden .skills-box:nth-child(3) {
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
-    transform: scale(0.8);
-    transition-delay: 0.6s;
-}
-
-.show-animate .skills-box:nth-child(3) {
-    opacity: 1;
-    transform: scale(1);
-}
-
-.skills-title h1 {
-    position: relative;
-}
-
-.skills-title h1::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 12px;
-    width: 100%;
-    height: 4px; 
-    background: var(--gradient);
-    border-radius: 6px;
-}
-
-.box-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    transition: all 0.8s;
-}
-
-.skills-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: white;
-    border-radius: 20px;
-    width: clamp(350px, 26vw, 450px);
-    height: clamp(300px, 20vw, 400px);
-    padding: 1rem;
-    position: relative;
-    transition: scale 0.3s ease-in-out;
-}
-
-.box-container:hover {
-    scale: 1.05;
-}
-
-
-.skills-box:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: -18px;
-    width: 6px;
-    height: 100%;
-    background: var(--gradient);
-    border-radius: 20px;
-}
-
-.skills-box i {
-    font-size: 2rem;
-}
-
-.skills-box h2 {
-    font-size: 1.5rem;
-}
-
-.skills-box p {
-    font-size: 1rem;
-}
-
-@media (max-width: 1113px) and (min-width: 851px) {
-    .skills-box:nth-child(1)::after {
-        top: 0;
-        bottom: auto;
-        left: auto;
-        right: -18px;
-        width: 6px;
-        height: 100%;
-        background: var(--gradient);
-    }
-
-    .skills-box:nth-child(2)::after {
-        display: none;
-    }
-}
-
-@media (max-width: 850px) {
-    .box-container {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .skills-box:not(:last-child)::after {
-        top: auto;
-        bottom: -18px;
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: 6px;
-    }
-}
-
-
 /*=============== Experience ===============*/
 .experience-section {
     position: relative;
@@ -814,7 +626,7 @@ a {
     margin-left: -3px;
     z-index: -1;
     height: 0%;
-    transition: height 6s linear;
+    transition: height 5s linear;
 }
 
 .experience-hidden.show-animate::after {
@@ -844,7 +656,7 @@ a {
     opacity: 0;
     transform: translateY(-30px);
     transition: opacity 1s linear, transform 1s linear;
-    transition-delay: 2.5s;
+    transition-delay: 2s;
 }
 
 .show-animate .timeline-container:nth-child(2) {
@@ -856,7 +668,7 @@ a {
     opacity: 0;
     transform: translateY(-30px);
     transition: opacity 1s linear, transform 1s linear;
-    transition-delay: 5s;
+    transition-delay: 4s;
 }
 
 .show-animate .timeline-container:nth-child(3) {
@@ -917,6 +729,30 @@ a {
     left: -15px;
 }
 
+.timeline-container h2 {
+    font-size: 1.5em;
+    color: var(--charcoal-color);
+
+}
+
+.timeline-container h3 {
+    font-size: 1.2em;
+    color: var(--charcoal-color);
+
+}
+
+.role-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    color: var(--charcoal-color);
+    padding-top: 10px;
+}
+
+.role-text span{
+    font-weight: var(--font-heavy);
+}
+
 @media screen and (max-width: 600px) {
     .experience-section {
         margin: 50px auto;
@@ -955,6 +791,328 @@ a {
     }
 }
 
+/* =============== Skills =============== */
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.skills-title {
+    color: var(--charcoal-color);
+    font-size: clamp(30px, 4vw, 40px);
+    padding-bottom: 35px;
+}
+
+.hidden .skills-title {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+    transform: scale(0.8);
+}
+
+.show-animate .skills-title {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.skills-logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 0px 100px 35px 100px;
+}
+
+.skills-logos img {
+    width: 100px; 
+    height: auto;
+    margin: 0 auto; 
+}
+
+.skills-logos img {
+    width: 100px; 
+    height: auto;
+    margin: 0 auto; 
+}
+
+@media (max-width: 850px) {
+    .skills-logos img {
+        width: 65px; 
+    }
+}
+
+.hidden .skills-logos img:nth-child(1){
+    opacity: 0;
+    scale: 0.5;
+    transition: opacity 1.5s linear, scale 1.5s linear;
+    transition-delay: 1s;
+}
+
+.show-animate .skills-logos img:nth-child(1) {
+    opacity: 1;
+    scale: 1;
+}
+
+.hidden .skills-logos img:nth-child(2){
+    opacity: 0;
+    scale: 0.5;
+    transition: opacity 1.5s linear, scale 1.5s linear;
+    transition-delay: 0.35s;
+
+}
+
+.show-animate .skills-logos img:nth-child(2) {
+    opacity: 1;
+    scale: 1;
+}
+
+.hidden .skills-logos img:nth-child(3){
+    opacity: 0;
+    scale: 0.5;
+    transition: opacity 1.5s linear, scale 1.5s linear;
+    transition-delay: 0.6s;
+
+}
+
+.show-animate .skills-logos img:nth-child(3) {
+    opacity: 1;
+    scale: 1;
+}
+
+.hidden .skills-logos img:nth-child(4){
+    opacity: 0;
+    scale: 0.5;
+    transition: opacity 1.5s linear, scale 1.5s linear;
+    transition-delay: 0.4s;
+
+}
+
+.show-animate .skills-logos img:nth-child(4) {
+    opacity: 1;
+    scale: 1;
+}
+
+.hidden .skills-logos img:nth-child(5){
+    opacity: 0;
+    scale: 0.5;
+    transition: opacity 1.5s linear, scale 1.5s linear;
+    transition-delay: 1.2s;
+
+}
+
+.show-animate .skills-logos img:nth-child(5) {
+    opacity: 1;
+    scale: 1;
+}
+
+.hidden .skills-logos img:nth-child(6){
+    opacity: 0;
+    scale: 0.5;
+    transition: opacity 1.5s linear, scale 1.5s linear;
+    transition-delay: 0.9s;
+
+}
+
+.show-animate .skills-logos img:nth-child(6) {
+    opacity: 1;
+    scale: 1;
+}
+
+.hidden .skills-logos img:nth-child(7){
+    opacity: 0;
+    scale: 0.5;
+    transition: opacity 1.5s linear, scale 1.5s linear;
+    transition-delay: 0.7s;
+
+}
+
+.show-animate .skills-logos img:nth-child(7) {
+    opacity: 1;
+    scale: 1;
+}
+
+.hidden .skills-logos img:nth-child(8){
+    opacity: 0;
+    scale: 0.5;
+    transition: opacity 1.5s linear, scale 1.5s linear;
+    transition-delay: 0.85s;
+}
+
+.hidden .skills-box:nth-child(1) {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+    transform: scale(0.8);
+    transition-delay: 0.5s;
+}
+
+.show-animate .skills-logos img:nth-child(8) {
+    opacity: 1;
+    scale: 1;
+}
+
+.show-animate .skills-box:nth-child(1) {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.hidden .skills-box:nth-child(1)::after {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    transition-delay: 0.67s;
+}
+
+.show-animate .skills-box:nth-child(1)::after {
+    opacity: 1;
+}
+
+.hidden .skills-box:nth-child(2) {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+    transform: scale(0.8);
+    transition-delay: 0.75s;
+}
+
+.show-animate .skills-box:nth-child(2) {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.hidden .skills-box:nth-child(2)::after {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    transition-delay: 0.83s;
+}
+
+.show-animate .skills-box:nth-child(2)::after {
+    opacity: 1;
+}
+
+.hidden .skills-box:nth-child(3) {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+    transform: scale(0.8);
+    transition-delay: 0.9s;
+}
+
+.show-animate .skills-box:nth-child(3) {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.skills-title h1 {
+    position: relative;
+}
+
+.skills-title h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 12px;
+    width: 100%;
+    height: 4px; 
+    background: var(--gradient);
+    border-radius: 6px;
+}
+
+.box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    transition: all 0.8s;
+}
+
+.skills-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    width: clamp(350px, 26vw, 450px);
+    height: clamp(300px, 20vw, 400px);
+    padding: 1rem;
+    position: relative;
+    transition: scale 0.3s ease-in-out;
+}
+
+.box-container:hover {
+    scale: 1.05;
+}
+
+
+.skills-box:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -18px;
+    width: 6px;
+    height: 100%;
+    background: var(--gradient);
+    border-radius: 20px;
+}
+
+.skills-header {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ padding-top: 30px;
+ padding-bottom: 70px;
+}
+
+.skills-box i {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+}
+
+.skills-box h2 {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    text-align: center;
+}
+
+.skills-text {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.skills-text p {
+    font-size: clamp(0.95em, 5vw, 1em);
+    padding-bottom: 10px
+}
+
+@media (max-width: 1113px) and (min-width: 851px) {
+    .skills-box:nth-child(1)::after {
+        top: 0;
+        bottom: auto;
+        left: auto;
+        right: -18px;
+        width: 6px;
+        height: 100%;
+        background: var(--gradient);
+    }
+
+    .skills-box:nth-child(2)::after {
+        display: none;
+    }
+}
+
+@media (max-width: 850px) {
+    .box-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .skills-box:not(:last-child)::after {
+        top: auto;
+        bottom: -18px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 6px;
+    }
+}
 
 /*=============== Projects ===============*/
 .projects-content {
@@ -1165,6 +1323,7 @@ a {
 .content .text {
     display: flex;
     flex-direction: column;
+    height: 100%;
     padding-top: 10px;
 }
 
@@ -1174,6 +1333,14 @@ a {
     justify-content: end;
     padding-right: 20px;
     cursor: pointer;
+    color: var(--charcoal-color);
+}
+
+.content .close-button:hover {
+    background: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .content h1 {
@@ -1227,6 +1394,10 @@ a {
         padding: 8px 16px;
         margin: 20px 40px;
     }
+}
+
+.button {
+    font-weight: var(--font-heavy);
 }
 
 .button:hover {
