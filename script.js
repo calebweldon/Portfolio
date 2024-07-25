@@ -1,29 +1,15 @@
-// Navbar Stuff
-// const experienceSection = document.querySelector('.experience-section');
-// const scrollWatcher = document.createElement('div');
-
-// scrollWatcher.setAttribute('data-scroll-watcher', '');
-// primaryHeader.before(scrollWatcher)
-
-// const navObserver = new IntersectionObserver((entries) => {
-//     experienceSection.classList.toggle('sticking', !entries[0].isIntersecting)
-// }, {rootMargin: "200px 0px 0px 0px"});
-
-// navObserver.observe(scrollWatcher);
-
+// Nav bar
 const navMenu = document.getElementById('nav-menu');
 const navToggle = document.getElementById('nav-toggle');
 const navClose = document.getElementById('nav-close');
-const linkClose = document.getElementsByClassName('nav__link')
+const linkClose = document.getElementsByClassName('nav-link')
 
-/* Menu show */
 if(navToggle){
    navToggle.addEventListener('click', () =>{
       navMenu.classList.add('show-menu')
    });
 }
 
-/* Menu hidden */
 if(navClose){
    navClose.addEventListener('click', () =>{
       navMenu.classList.remove('show-menu')
@@ -56,24 +42,6 @@ function togglePopup4() {
 }
 
 // Animations
-// let sections = document.querySelectorAll('section');
-
-// window.onscroll = () => {
-//     sections.forEach(sec => {
-//         let top = window.scrollY;
-//         let offset = sec.offsetTop - 150;
-//         let height = sec.offsetHeight;
-
-//         if (top >= offset && top < offset + height) {
-//             sec.classList.add('show-animate');
-//         }
-//         // for repeating animations
-//         else {
-//             sec.classList.remove('show-animate');
-//         }
-//     })
-// }
-
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((el) => {
         if (el.isIntersecting) {
