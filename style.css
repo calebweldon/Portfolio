@@ -452,7 +452,7 @@ a {
         font-weight: 500;
         position: relative;
         top: 0;
-        animation: slide 12s steps(4) infinite;
+        animation: slide 16s steps(4) infinite;
       }
     
       @keyframes slide {
@@ -493,7 +493,7 @@ a {
         font-weight: 500;
         position: relative;
         top: 0;
-        animation: slide 12s steps(4) infinite;
+        animation: slide 16s steps(4) infinite;
       }
     
       @keyframes slide {
