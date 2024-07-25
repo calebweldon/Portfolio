@@ -5,10 +5,320 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+
+    <!-- REMIXICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
+
 </head>
 <body>
-    <script src="script.js"></script>
+          <!--==================== HEADER ====================-->
+        <header class="header nav-hidden" id="header">
+        <nav class="nav container">
+            <div class="nav-logo-container">
+                <a href="#">
+                    <img class ="nav-logo" src="assets/caleb-logo.png" alt="">
+                </a>
+            </div>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                    <a href="#about-section" class="nav-link">
+                        <i class="ri-arrow-right-up-line"></i>
+                        <span>About </span>
+                    </a>
+                    </li>
+
+                    <li class="nav-item">
+                    <a href="#skills-section" class="nav-link">
+                        <i class="ri-arrow-right-up-line"></i>
+                        <span>Skills</span>
+                    </a>
+                    </li>
+
+                    <li class="nav-item">
+                    <a href="#projects-section" class="nav-link">
+                        <i class="ri-arrow-right-up-line"></i>
+                        <span>Projects</span>
+                    </a>
+                    </li>
+
+                    <li class="nav-item">
+                    <a href="#contact-section" class="nav-link">
+                        <i class="ri-arrow-right-up-line"></i>
+                        <span>Contact</span>
+                    </a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-large-line"></i>
+                </div>
+
+                <div class="nav-social-side">
+                    <a href="https://github.com/calebweldon" target="_blank" class="nav-social-link-side">
+                    <i class="ri-github-line"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/calebweldon/" target="_blank" class="nav-social-link-side">
+                    <i class="ri-linkedin-box-line"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="nav-social">
+                <a href="https://github.com/calebweldon" target="_blank" class="nav-social-link">
+                    <i class="ri-github-line"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/calebweldon/" target="_blank" class="nav-social-link">
+                    <i class="ri-linkedin-box-line"></i>
+                </a>
+            </div>
+
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+        </header>
+
+    <main>
+
+        <section class="hero-section" id="hero-section">
+            <div class="hero-text-container">
+                <div class="intro-container">
+                    <p class="intro">HEY, I'M CALEB</p>
+                </div>
+                <div class="typewriter-container">
+                    <p class="static-text">></p>
+                    <ul class="typewriter-text">
+                    <li><span>CS Student</span></li>
+                    <li><span>Designer</span></li>
+                    <li><span>Developer</span></li>
+                    <li><span>Freelancer</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section hidden" id="about-section">
+            <div class="about-container">
+                <div class="about-title">
+                    <h1>ABOUT():</h1>
+                </div>
+                <div class="about-text">
+                    <p><span>//</span> I'm a rising Junior at Northwestern University studying computer science and data science.</p>
+                    <p><span>//</span> I solve problems, write clean code, communicate effectively and lead by example.</p>
+                    <p><span>//</span> In my freetime, you can find me hiking, watching Boston sports, or playing with my three dogs.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="experience-section experience-hidden" id="experience-section">
+            <div class="timeline-container left-container" style="--dly:1s">
+                <div class="timeline-text">
+                    <img src="assets/atscale-logo.png" alt="">
+                    <h2>AtScale</h2>
+                    <div class="role">
+                        <h3>Software Engineer Intern</h3>
+                        <small>June 2024 - Present</small>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nobis voluptatem similique dolor iusto natus unde dolores? Natus, incidunt consectetur.</p>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+            <div class="timeline-container right-container" style="--dly:1s">
+                <div class="timeline-text">
+                    <img src="assets/billed-logo.png" alt="">
+                    <h2>Billed</h2>
+                    <div class="role">
+                        <h3>Founding Frontend Developer</h3>
+                        <small>December 2023 - Present</small>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nobis voluptatem similique dolor iusto natus unde dolores? Natus, incidunt consectetur.</p>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+            <div class="timeline-container left-container" style="--dly:1s">
+                <div class="timeline-text">
+                    <img src="assets/bch-logo.png" alt="">
+                    <div class="role">
+                        <h2>Boston Children's Hospital</h2>
+                        <h3>Bioinformatics Research Lab Intern</h3>
+                    </div>
+                    <small>July 2023 - September 2023</small>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nobis voluptatem similique dolor iusto natus unde dolores? Natus, incidunt consectetur.</p>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-section hidden" id="skills-section">
+            <div class="skills-container">
+                <div class="skills-title">
+                    <h1>Skills():</h1>
+                </div>
+                <div class="box-container">
+                    <div class="skills-box">
+                        <i class="ri-terminal-window-line"></i>
+                        <h2>Software Engineering</h2>
+                        <p>textttttttttt</p>
+                    </div>
+        
+                    <div class="skills-box">
+                        <i class="ri-macbook-line"></i>
+                        <h2>Frontend</h2>
+                        <p>textttttttttt</p>
+                    </div>
+        
+                    <div class="skills-box">
+                        <i class="ri-code-line"></i>
+                        <h2>AI/ML</h2>
+                        <p>textttttttttt</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-section hidden" id="projects-section">
+            <div class="projects-content">
+                <div class="projects-title">
+                    <h1>Projects():</h1>
+                </div>
+                <div class="projects-container">
+                    <div class="card card1" onclick="togglePopup()">
+                        <div class="card-img">
+                            <img src="assets/budgetly-logo.png" alt="Budgetly">
+                        </div>
+                        <div class="card-details">
+                            <h3>Budgetly</h3>
+                            <p>App Development</p>
+                        </div>
+                    </div>
+    
+                    <div class="card card2" onclick="togglePopup2()">
+                        <div class="card-img">
+                            <img src="assets/billed-marketing-logo.png" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h3>Billed</h3>
+                            <p>App development</p>
+                        </div>
+                    </div>
+    
+                    <div class="card card3" onclick="togglePopup3()">
+                        <div class="card-img">
+                            <img src="assets/2048-logo.png" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h3>2048 Duel</h3>
+                            <p>Game Development</p>
+                        </div>
+                    </div>
+    
+                    <div class="card card4" onclick="togglePopup4()">
+                        <div class="card-img">
+                            <img src="assets/nn-logo.png" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h3>Blackjack NN</h3>
+                            <p>Machine Learning</p>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="popup" id="popup1">
+                <div class="overlay"></div>
+                <div class="overlay-container">
+                    <div class="content">
+                        <img src="assets/budgetly-logo.png" alt="Budgetly">
+                        <div class="text">
+                            <div class="close-button" onclick="togglePopup()">&times;</div>
+                            <h1>Budgetly</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident debitis illum reiciendis minima et aliquid error odit minus consectetur sunt?</p>
+                            <a href="" class="button">Go to Example</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup" id="popup2">
+                <div class="overlay"></div>
+                <div class="overlay-container">
+                    <div class="content">
+                        <img src="assets/billed-logo.png" alt="Billed">
+                        <div class="text">
+                            <div class="close-button" onclick="togglePopup2()">&times;</div>
+                            <h1>Budgetly</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident debitis illum reiciendis minima et aliquid error odit minus consectetur sunt?</p>
+                            <a href="" class="button">Go to Example</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup" id="popup3">
+                <div class="overlay"></div>
+                <div class="overlay-container">
+                    <div class="content">
+                        <img src="assets/2048-logo.png" alt="2048">
+                        <div class="text">
+                            <div class="close-button" onclick="togglePopup3()">&times;</div>
+                            <h1>Budgetly</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident debitis illum reiciendis minima et aliquid error odit minus consectetur sunt?</p>
+                            <a href="" class="button">Go to Example</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="popup" id="popup4">
+                <div class="overlay"></div>
+                <div class="overlay-container">
+                    <div class="content">
+                        <img src="assets/nn-logo.png" alt="NN">
+                        <div class="text">
+                            <div class="close-button" onclick="togglePopup4()">&times;</div>
+                            <h1>Budgetly</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident debitis illum reiciendis minima et aliquid error odit minus consectetur sunt?</p>
+                            <a href="" class="button">Go to Example</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            
+        </section>
+
+        <section id="contact-section">
+            <div class="footer hidden">
+                <div class="footer-title">
+                    <h2>Available for Internship</h2>
+                    <p>Summer 2025</p>
+                </div>
+                <div class="footer-links">
+                    <span>
+                        <a class="footer-link" href="https://www.linkedin.com/in/calebweldon/">LinkedIn</a>
+                    </span>
+                    <span>
+                        <a class="email" href="mailto:caleb.weldon04@gmail.com">caleb.weldon04@gmail.com</a>
+                    </span>
+                    <span>
+                        <a class="footer-link" href="https://github.com/calebweldon">Github</a>
+                    </span>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script defer src="script.js"></script>
 </body>
 </html>
