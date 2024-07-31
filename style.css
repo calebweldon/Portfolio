@@ -164,7 +164,7 @@ a {
 
 .nav-close {
     position: absolute;
-    top: 1rem;
+    top: 1.5rem;
     right: 1.5rem;
 }
 
@@ -179,7 +179,7 @@ a {
 }
 
 /*=============== Nav links non-mobile ===============*/
-@media screen and (min-width: 851px) {
+@media screen and (min-width: 751px) {
     .nav-hidden .nav-item {
         opacity: 0;
         transform: translateY(-30%);
@@ -220,7 +220,7 @@ a {
 }
 
 /*=============== Nav Mobile ===============*/
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 750px) {
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -362,39 +362,41 @@ a {
 .typewriter-container{
     display: flex;
     align-items: center;
-  }
+}
 
-  .typewriter-container .typewriter-text{
+.typewriter-container .typewriter-text{
     height: 90px;
     line-height: 90px;
     overflow: hidden;
-  }
+}
 
-  .typewriter-container .static-text{
+.typewriter-container .static-text{
     font-size: 80px;
     margin-right: 5px;
-  }
+}
 
-  .typewriter-text li{
+.typewriter-text li{
     color: var(--charcoal-color);
     font-size: 60px;
     font-weight: 500;
     position: relative;
     top: 0;
     animation: slide 16s steps(4) infinite;
-  }
+}
 
-  @keyframes slide {
+@keyframes slide {
     100%{
-      top: -360px;
+        top: -360px;
     }
-  }
-  .typewriter-text li span{
+}
+  
+.typewriter-text li span{
     position: relative;
     margin: 5px 0;
     line-height: 90px;
-  }
-  .typewriter-text li span::after{
+}
+  
+.typewriter-text li span::after{
     content: "";
     position: absolute;
     left: 0;
@@ -405,82 +407,84 @@ a {
     animation: 
         typing 4s steps(10) infinite,
         cursor .4s step-end infinite alternate;
-  }
+}
 
-  @keyframes typing {
+@keyframes typing {
     40%, 60%{
-      left: 100%;
+        left: 100%;
     }
     100%{
-      left: 0;
+        left: 0;
     }
-  }
+}
 
-  @keyframes cursor {
+@keyframes cursor {
     0%, 100% {
-      border-color: var(--charcoal-color);
+        border-color: var(--charcoal-color);
     }
     50% {
-      border-color: transparent;
+        border-color: transparent;
     }
-  }
+}
 
-/*=============== TypeWriter medium ===============*/
+/*=============== TypeWriter Medium ===============*/
 
-  @media (max-width: 950px) and (min-width: 701px) {
-      .typewriter-container .typewriter-text{
+@media (max-width: 950px) and (min-width: 701px) {
+    .typewriter-container .typewriter-text{
         height: 75px;
         line-height: 75px;
-      }
+    }
     
-      .typewriter-container .static-text{
+    .typewriter-container .static-text{
         font-size: 75px;
         margin-right: 5px;
-      }
+    }
     
-      .typewriter-text li{
+    .typewriter-text li{
         font-size: 50px;
-      }
+    }
     
-      @keyframes slide {
+    @keyframes slide {
         100%{
-          top: -300px;
+            top: -300px;
         }
-      }
+    }
 
-      .typewriter-text li span{
+    .typewriter-text li span{
         line-height: 75px;
-      }
-  }
+    }
+}
 
-  /*=============== TypeWriter mobile ===============*/
+/*=============== TypeWriter Mobile ===============*/
 
-  @media (max-width: 700px) {
+@media (max-width: 700px) {
     .typewriter-container .typewriter-text{
         height: 60px;
         line-height: 60px;
-      }
-    
-      .typewriter-container .static-text{
+    }
+
+    .typewriter-container .static-text{
         font-size: 60px;
         margin-right: 5px;
-      }
-    
-      .typewriter-text li{
+    }
+
+    .typewriter-text li{
         font-size: 40px;
-      }
-    
-      @keyframes slide {
+    }
+
+    @keyframes slide {
         100%{
-          top: -240px;
+            top: -240px;
         }
-      }
-      .typewriter-text li span{
+    }
+        
+    .typewriter-text li span{
         line-height: 60px;
-      }
+    }
 }
 
-/*=============== About me ===============*/
+/*=============== About ===============*/
+
 .about-container {
     display: flex;
     flex-direction: row;
@@ -567,6 +571,8 @@ a {
     align-items: center;
 }
 
+/*=============== About Mobile ===============*/
+
 @media (max-width: 800px) {
     .about-container {
         display: flex;
@@ -581,6 +587,7 @@ a {
 }
 
 /*=============== Experience ===============*/
+
 .experience-section {
     position: relative;
     max-width: 1200px;
@@ -721,9 +728,20 @@ a {
     padding-top: 10px;
 }
 
+.role-text p {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 0.5em;
+}
+
 .role-text span{
     font-weight: var(--font-heavy);
+    font-size: 1.5em;
+    line-height: 1;
 }
+
+
+/*=============== Experience Mobile ===============*/
 
 @media screen and (max-width: 600px) {
     .experience-section {
@@ -1051,6 +1069,8 @@ a {
     font-size: clamp(0.95em, 5vw, 1em);
 }
 
+/* =============== Skills Medium =============== */
+
 @media (max-width: 1113px) and (min-width: 851px) {
     .skills-box:nth-child(1)::after {
         top: 0;
@@ -1066,6 +1086,8 @@ a {
         display: none;
     }
 }
+
+/* =============== Skills Mobile =============== */
 
 @media (max-width: 850px) {
     .box-container {
@@ -1253,6 +1275,8 @@ a {
     -webkit-text-fill-color: transparent;
 }
 
+/*=============== Popup ===============*/
+
 .popup .overlay {
     position: fixed;
     top: 0;
@@ -1349,23 +1373,6 @@ a {
                       var(--gradient);
 }
 
-
-@media (max-width: 800px) {
-    .popup .overlay-container {
-        width: 450px;
-        height: 400px;
-    }
-
-    .content p {
-        padding: 40px 10px 0px 10px;
-    }
-
-    .content a {
-        padding: 8px 16px;
-        margin: 20px 40px;
-    }
-}
-
 .button {
     font-weight: var(--font-heavy);
 }
@@ -1384,7 +1391,26 @@ a {
     box-shadow: 0px 0px 20px var(--charcoal-color);
 }
 
+/*=============== Projects Mobile ===============*/
+
+@media (max-width: 800px) {
+    .popup .overlay-container {
+        width: 450px;
+        height: 400px;
+    }
+
+    .content p {
+        padding: 40px 10px 0px 10px;
+    }
+
+    .content a {
+        padding: 8px 16px;
+        margin: 20px 40px;
+    }
+}
+
 /*=============== Contact ===============*/
+
 .footer {
     background: var(--off-white-color);
     display: flex;
@@ -1476,6 +1502,8 @@ a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+/*=============== Contact Mobile ===============*/
 
 @media (max-width: 768px) {
     .footer {
