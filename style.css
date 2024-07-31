@@ -376,7 +376,6 @@ a {
   }
 
   .typewriter-text li{
-    list-style: none;
     color: var(--charcoal-color);
     font-size: 60px;
     font-weight: 500;
@@ -429,15 +428,9 @@ a {
 /*=============== TypeWriter medium ===============*/
 
   @media (max-width: 950px) and (min-width: 701px) {
-    .typewriter-container{
-        display: flex;
-        align-items: center;
-      }
-    
       .typewriter-container .typewriter-text{
         height: 75px;
         line-height: 75px;
-        overflow: hidden;
       }
     
       .typewriter-container .static-text{
@@ -446,13 +439,7 @@ a {
       }
     
       .typewriter-text li{
-        list-style: none;
-        color: var(--charcoal-color);
         font-size: 50px;
-        font-weight: 500;
-        position: relative;
-        top: 0;
-        animation: slide 16s steps(4) infinite;
       }
     
       @keyframes slide {
@@ -460,9 +447,8 @@ a {
           top: -300px;
         }
       }
+
       .typewriter-text li span{
-        position: relative;
-        margin: 5px 0;
         line-height: 75px;
       }
   }
@@ -470,15 +456,9 @@ a {
   /*=============== TypeWriter mobile ===============*/
 
   @media (max-width: 700px) {
-    .typewriter-container{
-        display: flex;
-        align-items: center;
-      }
-    
-      .typewriter-container .typewriter-text{
+    .typewriter-container .typewriter-text{
         height: 60px;
         line-height: 60px;
-        overflow: hidden;
       }
     
       .typewriter-container .static-text{
@@ -487,13 +467,7 @@ a {
       }
     
       .typewriter-text li{
-        list-style: none;
-        color: var(--charcoal-color);
         font-size: 40px;
-        font-weight: 500;
-        position: relative;
-        top: 0;
-        animation: slide 16s steps(4) infinite;
       }
     
       @keyframes slide {
@@ -502,8 +476,6 @@ a {
         }
       }
       .typewriter-text li span{
-        position: relative;
-        margin: 5px 0;
         line-height: 60px;
       }
 }
@@ -1024,6 +996,10 @@ a {
     transition: all 0.8s;
 }
 
+.box-container:hover {
+    scale: 1.05;
+}
+
 .skills-box {
     display: flex;
     flex-direction: column;
@@ -1033,15 +1009,9 @@ a {
     border-radius: 20px;
     width: clamp(350px, 26vw, 450px);
     height: clamp(300px, 20vw, 400px);
-    padding: 1rem;
     position: relative;
     transition: scale 0.3s ease-in-out;
 }
-
-.box-container:hover {
-    scale: 1.05;
-}
-
 
 .skills-box:not(:last-child)::after {
     content: "";
@@ -1074,11 +1044,11 @@ a {
 
 .skills-text {
     text-align: center;
-    padding-bottom: 20px;
+    margin: 0em 1em 3em 1em;
 }
+
 .skills-text p {
     font-size: clamp(0.95em, 5vw, 1em);
-    padding-bottom: 10px
 }
 
 @media (max-width: 1113px) and (min-width: 851px) {
