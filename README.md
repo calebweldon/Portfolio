@@ -52,20 +52,20 @@ Follow the steps below to set up and run the project locally on your machine.
 
 ### Installation
 
-1. Clone the repo
-   ```sh
-   git clone https://github.com/calebweldon/Portfolio
-   ```
-   
-2. Start a local server
-   > Two options include:
-   > 
-   > Use the Live Server VS Code extension, or
-   > 
-   > Run a local static server:
-   ```sh
-   npx serve public
-   ```
+1. Clone the repository:
+
+```sh
+git clone https://github.com/calebweldon/Portfolio
+```
+
+2. Start a local server:  
+   > You can either:  
+   > - Use the **Live Server** extension in VS Code  
+   > - Or run a static server manually:
+
+```sh
+npx serve public
+```
 
 <!-- CONTACT -->
 ## Contact
