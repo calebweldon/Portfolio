@@ -27,7 +27,9 @@
   <a href="https://calebweldon.com/">
     <img src="https://github.com/user-attachments/assets/65f207ae-124d-439a-ad4f-e0856be0721b" alt="Logo" width="400" height="400">
   </a>
-  <p>Hi, I'm Caleb. Check out my selected work by pressing the logo above!</p>
+  <p><i>Click the link above to be redirected to my website</i></p>
+  
+  <p>Hi, I'm Caleb. Check out my selected work !!</p>
 </div>
 
 
