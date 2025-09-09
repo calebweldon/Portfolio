@@ -8,6 +8,12 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
+     <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -21,7 +27,9 @@
   <a href="https://calebweldon.com/">
     <img src="https://github.com/user-attachments/assets/65f207ae-124d-439a-ad4f-e0856be0721b" alt="Logo" width="400" height="400">
   </a>
-  <p>Hi, I'm Caleb. Check out my selected work by pressing the logo above!</p>
+  <p><i>Click the link above to be redirected to my website</i></p>
+  
+  <p>Hi, I'm Caleb. Check out my selected work !!</p>
 </div>
 
 
@@ -36,6 +44,28 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+Follow the steps below to set up and run the project locally on your machine.
+
+### Installation
+
+1. Clone the repository:
+
+```sh
+git clone https://github.com/calebweldon/Portfolio
+```
+
+2. Start a local server:  
+   > You can either:  
+   > - Use the **Live Server** extension in VS Code  
+   > - Or run a static server manually:
+
+```sh
+npx serve public
+```
 
 <!-- CONTACT -->
 ## Contact
