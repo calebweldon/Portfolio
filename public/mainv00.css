@@ -1452,7 +1452,7 @@ a {
     color: var(--charcoal-color);
     font-weight: var(--font-regular);
     font-size: 1rem;
-    padding: 70px 10px 0px 0px;
+    padding: 70px 10px 0px 10px;
     transition: all 0.8s ease-in-out;
 }
 
