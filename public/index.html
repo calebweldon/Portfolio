@@ -14,10 +14,10 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="mainv01.css">
     <!-- REMIXICONS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
@@ -34,7 +34,7 @@
                 <li class="nav-item">
                 <a href="#about-section" class="nav-link">
                     <i class="ri-arrow-right-up-line"></i>
-                    <span>About </span>
+                    <span>About</span>
                 </a>
                 </li>
 
@@ -102,10 +102,10 @@
                 <div class="typewriter-container">
                     <p class="static-text">></p>
                     <ul class="typewriter-text">
-                    <li><span>Developer</span></li>
-                    <li><span>CS Student</span></li>
-                    <li><span>Engineer</span></li>
-                    <li><span>Designer</span></li>
+                    <li><span>Software Engineer</span></li>
+                    <li><span>Master's Student</span></li>
+                    <li><span>Solution Finder</span></li>
+                    <li><span>Dog Enthusiast</span></li>
                     </ul>
                 </div>
             </div>
@@ -214,27 +214,27 @@
                             <h2>Software Engineering</h2>
                         </div>
                         <div class="skills-text">
-                            <p>Experienced in object-oriented and functional programming with Python, Java, and C++. Knowledgable of Git and Agile software development.</p>
+                            <p><br>Proven history of working in Agile teams using Git for version control. Proficient in the full software development lifecycle, from architecting with design patterns and SOLID principles to test-driven implementation.</p>
                         </div>
                     </div>
         
                     <div class="skills-box">
                         <div class="skills-header">
                             <i class="ri-macbook-line"></i>
-                            <h2>Frontend</h2>
+                            <h2>Application Development</h2>
                         </div>
-                        <div class="skills-text">
-                            <p>Strong knowledge of web and mobile app development with background in HTML, CSS, JS, and Swift.</p>
+                        <div class="skills-text">.
+                            <p>Experienced in building full-stack mobile and web applications with React, Spring Boot, Node, and Swift. Knowledgable of architecting and deploying cloud infastrucure with AWS and Docker.</p>
                         </div>
                     </div>
         
                     <div class="skills-box">
                         <div class="skills-header">
                             <i class="ri-code-line"></i>
-                            <h2>Data + Cloud</h2>
+                            <h2>AI + Data</h2>
                         </div>
                         <div class="skills-text">
-                            <p>Skilled in AWS for building scalable cloud infrastructure. Proficient in MySQL and PostgresSQL for efficient database interaction.</p>
+                            <p><br>Skilled in building agentic AI workflows with Strands Agents SDK and Bedrock. Versed in MySQL and PostreSQL for database interaction</p>
                         </div>
                     </div>
                 </div>
@@ -247,43 +247,64 @@
                     <h1>Projects():</h1>
                 </div>
                 <div class="projects-container">
+
                     <div class="card card1" onclick="togglePopup()">
                         <div class="card-img">
-                            <img src="assets/budgetly-logo.png" alt="Budgetly">
+                            <img src="assets/ufc-elo-logo.png" alt="">
                         </div>
                         <div class="card-details">
-                            <h3>Budgetly</h3>
-                            <p>App Development</p>
+                            <h3>UFC Elo Tracker</h3>
+                            <p>Web App Development</p>
                         </div>
                     </div>
-    
+
                     <div class="card card2" onclick="togglePopup2()">
+                        <div class="card-img">
+                            <img src="assets/exploding-kittens-logo.png" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h3>Exploding Kittens</h3>
+                            <p>Development Lifecycle</p>
+                        </div>
+                    </div>
+
+                    <div class="card card3" onclick="togglePopup3()">
                         <div class="card-img">
                             <img src="assets/billed-marketing-logo.png" alt="">
                         </div>
                         <div class="card-details">
                             <h3>Billed</h3>
-                            <p>App development</p>
+                            <p>Mobile App development</p>
                         </div>
                     </div>
-    
-                    <div class="card card3" onclick="togglePopup3()">
+
+                    <div class="card card4" onclick="togglePopup4()">
                         <div class="card-img">
-                            <img src="assets/2048-logo.png" alt="">
+                            <img src="assets/budgetly-logo.png" alt="">
                         </div>
                         <div class="card-details">
-                            <h3>2048 Duel</h3>
-                            <p>Game Development</p>
+                            <h3>Budgetly</h3>
+                            <p>Mobile App Development</p>
                         </div>
                     </div>
     
-                    <div class="card card4" onclick="togglePopup4()">
+                    <div class="card card5" onclick="togglePopup5()">
                         <div class="card-img">
                             <img src="assets/nn-logo.png" alt="">
                         </div>
                         <div class="card-details">
                             <h3>Blackjack NN</h3>
                             <p>Machine Learning</p>
+                        </div>
+                    </div>
+
+                    <div class="card card6" onclick="togglePopup6()">
+                        <div class="card-img">
+                            <img src="assets/2048-logo.png" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h3>2048 Duel</h3>
+                            <p>Game Development</p>
                         </div>
                     </div>
     
@@ -294,12 +315,12 @@
                 <div class="overlay"></div>
                 <div class="overlay-container">
                     <div class="content">
-                        <img src="assets/budgetly-logo.png" alt="Budgetly">
+                        <img src="assets/ufc-elo-logo-popup.png" alt="">
                         <div class="text">
                             <div class="close-button" onclick="togglePopup()">&times;</div>
-                            <h1>Budgetly</h1>
-                            <p>Say hello to Budgetly, your personal finance partner! Budgetly is an App developed for iOS written in Swift that makes tracking your expenses seamless and stress-free.</p>
-                            <a href="https://github.com/calebweldon/Budgetly" class="button" target="_blank">Project Repo</a>
+                            <h1>UFC Elo Tracker</h1>
+                            <p>The UFC meets the elo ranking system (popularized by chess). This project combines two of my interests into a cloud-deployed web app.</p>
+                            <a href="https://github.com/calebweldon/UFC-elo-app" class="button" target="_blank">Project Repo</a>
                         </div>
                     </div>
                 </div>
@@ -309,12 +330,12 @@
                 <div class="overlay"></div>
                 <div class="overlay-container">
                     <div class="content">
-                        <img src="assets/billed-zoomed.png" alt="Billed">
+                        <img src="assets/exploding-kittens-logo.png" alt="">
                         <div class="text">
                             <div class="close-button" onclick="togglePopup2()">&times;</div>
-                            <h1>Billed</h1>
-                            <p>Splitting the Bill, Simplified. Billed is a startup founded at Northwestern University where I serve as a founding frontend developer using Swift.</p>
-                            <a href="https://billed-app.com/" class="button" target="_blank">Launch Website</a>
+                            <h1>Exploding Kittens</h1>
+                            <p>A Java-based digital recreation of Exploding Kittens built following industry best practices in software design, development, and testing.</p>
+                            <a href="https://github.com/calebweldon/ExplodingKittens" class="button" target="_blank">Project Repo</a>
                         </div>
                     </div>
                 </div>
@@ -324,24 +345,39 @@
                 <div class="overlay"></div>
                 <div class="overlay-container">
                     <div class="content">
-                        <img src="assets/2048-logo.png" alt="2048">
+                        <img src="assets/billed-zoomed.png" alt="Billed">
                         <div class="text">
                             <div class="close-button" onclick="togglePopup3()">&times;</div>
-                            <h1>2048 Duel</h1>
-                            <p>2048 Duel is a multiplayer adaptation of the popular game 2048 made using C++. Grab a friend and a computer and start playing!</p>
-                            <a href="https://github.com/calebweldon/2048-Duel" class="button" target="_blank">Project Repo</a>
+                            <h1>Billed</h1>
+                            <p>Billed was a startup founded at Northwestern University where I led frontend development from conception to the MVP Stage.<br><br><i>Note: Now a simple web app</i></p>
+                            <a href="https://billed-app.com/" class="button" target="_blank">Launch Web App</a>
                         </div>
                     </div>
                 </div>
             </div>
- 
+
             <div class="popup" id="popup4">
+                <div class="overlay"></div>
+                <div class="overlay-container">
+                    <div class="content">
+                        <img src="assets/budgetly-logo.png" alt="Budgetly">
+                        <div class="text">
+                            <div class="close-button" onclick="togglePopup4()">&times;</div>
+                            <h1>Budgetly</h1>
+                            <p>Say hello to Budgetly, your personal finance partner! Budgetly is an App developed for iOS written in Swift that makes tracking your expenses seamless and stress-free.</p>
+                            <a href="https://github.com/calebweldon/Budgetly" class="button" target="_blank">Project Repo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup" id="popup5">
                 <div class="overlay"></div>
                 <div class="overlay-container">
                     <div class="content">
                         <img src="assets/nn-logo.png" alt="NN">
                         <div class="text">
-                            <div class="close-button" onclick="togglePopup4()">&times;</div>
+                            <div class="close-button" onclick="togglePopup5()">&times;</div>
                             <h1>Blackjack NN</h1>
                             <p>This Python machine learning project leverages Tensorflow, Keras API, and OpenAI Gym to develop a NN that learns a strategy almost 90% similar to the statistically optimal blackjack strategy.</p>
                             <a href="https://github.com/calebweldon/BlackjackNN" class="button" target="_blank">Project Repo</a>
@@ -350,8 +386,20 @@
                 </div>
             </div>
 
-            
-            
+            <div class="popup" id="popup6">
+                <div class="overlay"></div>
+                <div class="overlay-container">
+                    <div class="content">
+                        <img src="assets/2048-logo.png" alt="2048">
+                        <div class="text">
+                            <div class="close-button" onclick="togglePopup6()">&times;</div>
+                            <h1>2048 Duel</h1>
+                            <p>2048 Duel is a multiplayer adaptation of the popular game 2048 made using C++. Grab a friend and a computer and start playing!</p>
+                            <a href="https://github.com/calebweldon/2048-Duel" class="button" target="_blank">Project Repo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="contact-section">

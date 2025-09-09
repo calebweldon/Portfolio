@@ -41,6 +41,14 @@ function togglePopup4() {
     document.getElementById("popup4").classList.toggle("active");
 }
 
+function togglePopup5() {
+    document.getElementById("popup5").classList.toggle("active");
+}
+
+function togglePopup6() {
+    document.getElementById("popup6").classList.toggle("active");
+}
+
 // Animations
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((el) => {
