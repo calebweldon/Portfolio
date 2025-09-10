@@ -509,6 +509,32 @@ a {
     }
 }
 
+@media (max-width: 500px) {
+    .typewriter-container .typewriter-text{
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .typewriter-container .static-text{
+        font-size: 40px;
+        margin-right: 5px;
+    }
+
+    .typewriter-text li{
+        font-size: 30px;
+    }
+
+    @keyframes slide {
+        100%{
+            top: -160px;
+        }
+    }
+        
+    .typewriter-text li span{
+        line-height: 40px;
+    }
+}
+
 /*=============== About ===============*/
 
 .about-container {
@@ -1148,7 +1174,7 @@ a {
 
     .skills-box {
         width: 325px;
-        height: 275px;
+        height: 300px;
     }
 
     .skills-box i {
@@ -1460,7 +1486,7 @@ a {
     padding: 10px 20px;
     margin: 100px 40px 0px 40px;
     color: var(--charcoal-color);
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: var(--font-medium);
     border-radius: 10px;
     font-size: 1rem; 
@@ -1520,13 +1546,13 @@ a {
     }
 
     .content h1 {
-        font-size: clamp(1.2rem, 2vw, 1.5rem);
+        font-size: clamp(1.2rem, 2vw, 1.4rem);
         margin-top: -10px;
     }
 
     .content p {
-        font-size: clamp(0.8rem, 2vw, 0.9rem);
-        padding-top: 20px;
+        font-size: clamp(0.75rem, 2vw, 0.8rem);
+        padding-top: 30px;
         padding-left: 15px;
         padding-right: 15px;
         margin-top: -10px;
