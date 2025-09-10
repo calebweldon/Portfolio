@@ -873,19 +873,13 @@ a {
 
 .skills-logos {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 1rem;
     padding: 0px 100px 35px 100px;
 }
 
 .skills-logos img {
-    width: 100px; 
-    height: auto;
-    margin: 0 auto; 
-}
-
-.skills-logos img {
-    width: 100px; 
+    width: 100px;
     height: auto;
     margin: 0 auto; 
 }
@@ -893,6 +887,30 @@ a {
 @media (max-width: 850px) {
     .skills-logos img {
         width: 65px; 
+    }
+
+    .skills-logos {
+        gap: 0.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-logos img {
+        width: 58px; 
+    }
+
+    .skills-logos {
+        gap: 0.4rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .skills-logos img {
+        width: 50px; 
+    }
+
+    .skills-logos {
+        gap: 0.25rem;
     }
 }
 
@@ -951,7 +969,7 @@ a {
     opacity: 0;
     scale: 0.5;
     transition: opacity 1.5s linear, scale 1.5s linear;
-    transition-delay: 1.2s;
+    transition-delay: 0.8s;
 }
 
 .show-animate .skills-logos img:nth-child(5) {
@@ -992,16 +1010,64 @@ a {
     transition-delay: 0.85s;
 }
 
+.show-animate .skills-logos img:nth-child(8) {
+    opacity: 1;
+    scale: 1;
+}
+
+.hidden .skills-logos img:nth-child(9){
+    opacity: 0;
+    scale: 0.5;
+    transition: opacity 1.5s linear, scale 1.5s linear;
+    transition-delay: 1.15s;
+}
+
+.show-animate .skills-logos img:nth-child(9) {
+    opacity: 1;
+    scale: 1;
+}
+
+.hidden .skills-logos img:nth-child(10){
+    opacity: 0;
+    scale: 0.5;
+    transition: opacity 1.5s linear, scale 1.5s linear;
+    transition-delay: 0.55s;
+}
+
+.show-animate .skills-logos img:nth-child(10) {
+    opacity: 1;
+    scale: 1;
+}
+
+.hidden .skills-logos img:nth-child(11){
+    opacity: 0;
+    scale: 0.5;
+    transition: opacity 1.5s linear, scale 1.5s linear;
+    transition-delay: 0.5s;
+}
+
+.show-animate .skills-logos img:nth-child(11) {
+    opacity: 1;
+    scale: 1;
+}
+
+.hidden .skills-logos img:nth-child(12){
+    opacity: 0;
+    scale: 0.5;
+    transition: opacity 1.5s linear, scale 1.5s linear;
+    transition-delay: 1.2s;
+}
+
+.show-animate .skills-logos img:nth-child(12) {
+    opacity: 1;
+    scale: 1;
+}
+
 .hidden .skills-box:nth-child(1) {
     opacity: 0;
     transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
     transform: scale(0.8);
     transition-delay: 0.5s;
-}
-
-.show-animate .skills-logos img:nth-child(8) {
-    opacity: 1;
-    scale: 1;
 }
 
 .show-animate .skills-box:nth-child(1) {
@@ -1542,7 +1608,7 @@ a {
 @media (max-width: 480px) {
     .popup .overlay-container {
         width: clamp(325px, 10vw, 450px);
-        height: clamp(325px, 10vw, 400px);
+        height: clamp(375px, 10vw, 450px);
     }
 
     .content h1 {
