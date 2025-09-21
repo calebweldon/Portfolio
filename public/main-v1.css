@@ -657,7 +657,7 @@ a {
     margin-left: -3px;
     z-index: -1;
     height: 0%;
-    transition: height 8s linear;
+    transition: height 6s linear;
 }
 
 .experience-hidden.show-animate::after {
@@ -687,7 +687,7 @@ a {
     opacity: 0;
     transform: translateY(-30px);
     transition: opacity 1s linear, transform 1s linear;
-    transition-delay: 2s;
+    transition-delay: 3s;
 }
 
 .show-animate .timeline-container:nth-child(2) {
@@ -699,22 +699,10 @@ a {
     opacity: 0;
     transform: translateY(-30px);
     transition: opacity 1s linear, transform 1s linear;
-    transition-delay: 4s;
+    transition-delay: 5s;
 }
 
 .show-animate .timeline-container:nth-child(3) {
-    opacity: 1;
-    transform: translateY(0px);
-}
-
-.experience-hidden .timeline-container:nth-child(4) {
-    opacity: 0;
-    transform: translateY(-30px);
-    transition: opacity 1s linear, transform 1s linear;
-    transition-delay: 6s;
-}
-
-.show-animate .timeline-container:nth-child(4) {
     opacity: 1;
     transform: translateY(0px);
 }
